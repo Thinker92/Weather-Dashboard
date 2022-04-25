@@ -18,31 +18,24 @@
     <main class="container-fluid">
         <div class="row">
         <div class="col-12 col-md-3 p-2">
-            <form class="d-inline-block">
-                <label for="search">Search for a city:</label>
-                <input type="text" class="form-control" id="search" placeholder="Search a city here!" />
-                <button type="submit" class="btn btn-primary">Search</button>
+            <form class="d-inline-block" id="searchForm">
+                <label for="inputCity">Search for a city:</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Search a city here!" />
+                <input type="submit" class="btn btn-primary" value="Submit" id="searchBtn"></input>
             </form>
-            <div class="past-search border">
-                <ul class="list-group" id="history">
-                    <button type="button" class="btn btn-secondary">
-                        Columbus, OH
-                    </button>
-                </ul>
+            <div id="pastSearch">
+                <!-- <button type="button" class="btn btn-secondary">
+                    Columbus, OH
+                </button> -->
             </div>
         </div>
         <div class="col-12 col-md-9" id="cityData">
             <div id="oneDay">
-                <h2 id="cityName">Columbus</h2>
-                <div id="cityDetails">
-                    <h3>Temp: 75</h3>
-                    <h3>Wind: 6.67 MPH</h3>
-                    <h3>Humidity: 46 %</h3>
-                    <h3>UV Index: 0.47</h3>
-                </div>
+                <h2 id="cityName"></h2>
+                <div id="cityDetails"></div>
             </div>
             <div id="fiveDay">
-                <h2>5-Day Forecast:</h2>
+                <h2 id="5dayTitle"></h2>
                 <div id="forecastCards"></div>
             </div>
         </div>
